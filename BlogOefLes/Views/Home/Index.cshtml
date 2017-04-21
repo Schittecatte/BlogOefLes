@@ -1,0 +1,12 @@
+﻿@model IList<BlogOefLes.Models.Person>
+@{
+    ViewBag.Title = "Home";
+}
+<h1 style="text-decoration-style: dotted">BlogPage</h1>
+@Html.ActionLink("Nieuw","Create","Person")
+@Html.Partial("BlogPartial1")
+@Html.Partial("BlogPartial2")
+@Html.Partial("BlogPartial3")
+<div>
+    <a type="button" class="btn btn-default" href="Create" id="create">Create contact</a>
+</div>
